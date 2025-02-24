@@ -13,31 +13,37 @@ const ToolsSection = () => {
   const tools = {
     "Content Creation": [
       {
-        name: "Adobe Premier Pro",
+        name: "Capcut",
         proficiency: 90,
         description: "Video editing & post-production",
         icon: "🎬",
       },
+      // {
+      //   name: "Adobe After Effects",
+      //   proficiency: 85,
+      //   description: "Motion graphics & visual effects",
+      //   icon: "✨",
+      // },
       {
-        name: "Adobe After Effects",
-        proficiency: 85,
-        description: "Motion graphics & visual effects",
-        icon: "✨",
-      },
-      {
-        name: "Canva Pro",
+        name: "Canva",
         proficiency: 95,
         description: "Quick social media graphics",
         icon: "🎨",
       },
-      {
-        name: "Adobe Photoshop",
-        proficiency: 88,
-        description: "Image editing & manipulation",
-        icon: "🖼️",
-      },
+      // {
+      //   name: "Adobe Photoshop",
+      //   proficiency: 88,
+      //   description: "Image editing & manipulation",
+      //   icon: "🖼️",
+      // },
     ],
     "Social Media Management": [
+      {
+        name: "Hey Orca",
+        proficiency: 95,
+        description: "Social media scheduling",
+        icon: "📊",
+      },
       {
         name: "Meta Business Suite",
         proficiency: 95,
@@ -49,18 +55,6 @@ const ToolsSection = () => {
         proficiency: 92,
         description: "TikTok content & analytics",
         icon: "🎵",
-      },
-      {
-        name: "Hootsuite",
-        proficiency: 88,
-        description: "Social media scheduling",
-        icon: "📅",
-      },
-      {
-        name: "Buffer",
-        proficiency: 85,
-        description: "Content planning & analytics",
-        icon: "📊",
       },
     ],
     "Analytics & Strategy": [
@@ -76,12 +70,12 @@ const ToolsSection = () => {
         description: "Ad campaign optimization",
         icon: "🎯",
       },
-      {
-        name: "Sprout Social",
-        proficiency: 85,
-        description: "Social listening & reporting",
-        icon: "👥",
-      },
+      // {
+      //   name: "Sprout Social",
+      //   proficiency: 85,
+      //   description: "Social listening & reporting",
+      //   icon: "👥",
+      // },
       {
         name: "Mailchimp",
         proficiency: 88,
@@ -105,7 +99,7 @@ const ToolsSection = () => {
 
       <div className="max-w-7xl mx-auto">
         <motion.div variants={fadeIn} className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-purple-200">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-purple-200">
             Tools & Expertise
           </h2>
           <p className="text-lg sm:text-xl text-zinc-200 max-w-2xl mx-auto">

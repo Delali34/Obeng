@@ -97,7 +97,7 @@ const ProjectShowcase = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div variants={fadeIn} className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-purple-200">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-purple-200">
             Featured Projects
           </h2>
           <p className="text-lg sm:text-xl text-zinc-200 max-w-2xl mx-auto">

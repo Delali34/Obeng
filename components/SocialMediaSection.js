@@ -68,7 +68,7 @@ const SocialMediaSection = () => {
     >
       <motion.h2
         variants={fadeIn}
-        className="text-5xl sm:text-6xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+        className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
       >
         Social Media Management
       </motion.h2>

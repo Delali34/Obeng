@@ -26,7 +26,7 @@ const ContactSection = () => {
 
       <div className="max-w-7xl mx-auto">
         <motion.div variants={fadeIn} className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-purple-200">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-purple-200">
             Let's Create Together
           </h2>
           <p className="text-lg sm:text-xl text-zinc-200 max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ const ContactSection = () => {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="mailto:ernestanyomitse752@gmail.com"
+                  href="mailto:afiaobeng24@gmail.com"
                   className="flex items-center gap-4 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-full bg-rose-500/10 flex items-center justify-center text-rose-400 group-hover:scale-110 transition-transform">
@@ -65,12 +65,12 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-zinc-400 text-sm">Email Me At</p>
-                    <p className="text-white">ernestanyomitse752@gmail.com</p>
+                    <p className="text-white">afiaobeng24@gmail.com</p>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+23320431-4170"
+                  href="tel:+17097273093"
                   className="flex items-center gap-4 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
@@ -90,7 +90,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-zinc-400 text-sm">Call Me At</p>
-                    <p className="text-white">+233 (20) 431-4170</p>
+                    <p className="text-white">+1 (709) 727-3093</p>
                   </div>
                 </a>
               </div>
@@ -103,7 +103,7 @@ const ContactSection = () => {
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <a
-                  href="https://www.linkedin.com/in/anyomitse-ernest-6934b8190/"
+                  href="https://www.linkedin.com/in/afia-obeng-614684181"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
@@ -120,7 +120,41 @@ const ContactSection = () => {
                   <span className="text-white">LinkedIn</span>
                 </a>
 
-                {/* Add more social platforms as needed */}
+                <a
+                  href="https://www.instagram.com/afiaobeng__?igsh=Y2l3MDlxdWV3ZDZl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-pink-500/10 flex items-center justify-center text-pink-400 group-hover:scale-110 transition-transform">
+                    <svg
+                      className="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                  </div>
+                  <span className="text-white">Instagram</span>
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-black/10 flex items-center justify-center text-teal-400 group-hover:scale-110 transition-transform">
+                    <svg
+                      className="w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19.589 6.686a4.793 4.793 0 0 0-3.77-4.056V2h-3.08v13.74a2.55 2.55 0 0 1-2.184 2.55 2.55 2.55 0 0 1-2.92-2.53 2.55 2.55 0 0 1 3.29-2.43V9.78a6.105 6.105 0 0 0-7.97 5.8 6.105 6.105 0 0 0 6.08 6.11 6.105 6.105 0 0 0 6.09-6.11l-.002-9.95a8.13 8.13 0 0 0 4.077 1.05v-3.99a4.82 4.82 0 0 1-3.61-1.03z" />
+                    </svg>
+                  </div>
+                  <span className="text-white">TikTok</span>
+                </a>
               </div>
             </div>
           </motion.div>

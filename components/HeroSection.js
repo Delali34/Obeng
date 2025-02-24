@@ -151,7 +151,10 @@ const HeroSection = () => {
   const socialLinks = [
     { name: "Instagram", url: "https://instagram.com" },
     { name: "Twitter", url: "https://twitter.com" },
-    { name: "LinkedIn", url: "https://linkedin.com" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/afia-obeng-614684181",
+    },
   ];
 
   return (
@@ -212,7 +215,7 @@ const HeroSection = () => {
       >
         <motion.div variants={fadeIn} className="mb-6">
           <h2 className="text-lg md:text-xl font-light tracking-wider text-rose-200">
-            SOCIAL MEDIA STRATEGIST
+            DIGITAL CREATOR
           </h2>
         </motion.div>
 
@@ -281,7 +284,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="text-zinc-200 hover:text-rose-400 transition-colors duration-300 backdrop-blur-sm bg-white/5 px-4 py-2 rounded-full"
+              className="text-zinc-200 hover:text-rose-400 transition-colors text-sm duration-300 backdrop-blur-sm bg-white/5 px-4 py-2 rounded-full"
             >
               {social.name}
             </motion.a>
