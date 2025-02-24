@@ -24,9 +24,9 @@ const ProjectShowcase = () => {
   const projects = [
     {
       id: 1,
-      title: "Daniel's Quaterly Report",
+      title: "Instagram & TikTok Performance Report",
       description:
-        "Complete social media strategy and content creation for a leading fashion brand, resulting in 200% engagement increase.",
+        "A look at Daniel's growth from January to April. From launching to building engagement! 📈",
       tags: ["Social Media", "Content Strategy", "Brand Development"],
       images: [
         "/project1 (1).jpeg",
@@ -51,9 +51,9 @@ const ProjectShowcase = () => {
     },
     {
       id: 2,
-      title: "Goal setting testimonials",
+      title: "Driving Engagement through Webinars",
       description:
-        "Some of the feedbacks from a webinar where I spoke on goal setting",
+        "Building engaged communities through impactful webinars! Here’s what attendees had to say",
       tags: [
         "Social Media Management",
         "Content Creation",

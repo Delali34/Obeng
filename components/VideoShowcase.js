@@ -240,7 +240,7 @@ const VideoShowcase = () => {
       platform: "instagram",
       url: "https://www.instagram.com/reel/C7WT4nzCUo-/?igsh=QkFlT2t2R1JMQQ%3D%3D",
       videoUrl: "/insta (4).mp4",
-      campaign: "Drink ad",
+      campaign: "Cocktail ad",
       date: "Sept 2023",
       category: "Food",
       metrics: {
