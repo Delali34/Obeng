@@ -217,7 +217,7 @@ const VideoShowcase = () => {
       category: "Health",
       metrics: {
         likes: "189.5K",
-        comments: "2.3K",
+        comments: "2.43K",
         shares: "28.7K",
       },
       impact: "50K+ UGC submissions in 2 weeks",
