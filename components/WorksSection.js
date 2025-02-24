@@ -43,11 +43,7 @@ const ProjectShowcase = () => {
         "/project1 (3).jpeg",
         "/project1 (2).jpeg",
       ],
-      stats: {
-        engagement: "+200%",
-        followers: "+50K",
-        reach: "1M+",
-      },
+      stats: {},
     },
     {
       id: 2,
@@ -68,11 +64,7 @@ const ProjectShowcase = () => {
         "/project2 (3).jpeg",
         "/project2 (2).jpeg",
       ],
-      stats: {
-        engagement: "+150%",
-        followers: "+30K",
-        reach: "500K+",
-      },
+      stats: {},
     },
   ];
 
