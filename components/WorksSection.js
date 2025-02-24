@@ -85,6 +85,7 @@ const ProjectShowcase = () => {
   return (
     <motion.section
       initial="initial"
+      id="projects"
       whileInView="animate"
       viewport={{ once: true, amount: 0.3 }}
       className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-rose-900 py-20 px-4 sm:px-6"

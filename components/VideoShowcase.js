@@ -1,18 +1,24 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   exit: { opacity: 0, y: -20 },
 };
 
 const VideoCard = ({ video }) => {
   const videoRef = React.useRef(null);
+  const controls = useAnimation();
 
-  React.useEffect(() => {
+  // Start animation on component mount
+  useEffect(() => {
+    controls.start("animate");
+  }, [controls]);
+
+  useEffect(() => {
     const options = {
       root: null,
       rootMargin: "0px",
@@ -22,9 +28,21 @@ const VideoCard = ({ video }) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          videoRef.current.play();
+          if (videoRef.current) {
+            // Add a try-catch block to handle potential errors with video playback
+            try {
+              videoRef.current.play().catch((err) => {
+                console.log("Video play error:", err);
+                // Auto-play might be blocked by browser settings
+              });
+            } catch (err) {
+              console.log("Video play exception:", err);
+            }
+          }
         } else {
-          videoRef.current.pause();
+          if (videoRef.current) {
+            videoRef.current.pause();
+          }
         }
       });
     }, options);
@@ -42,8 +60,10 @@ const VideoCard = ({ video }) => {
 
   return (
     <motion.div
+      initial="initial"
+      animate={controls}
       variants={fadeIn}
-      className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 transform hover:scale-[1.02] transition-transform duration-300"
+      className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 transform hover:scale-[1.02] transition-transform duration-300 z-10 relative"
     >
       {/* Header */}
       <div className="p-3 flex items-center justify-between border-b border-white/10">
@@ -92,14 +112,15 @@ const VideoCard = ({ video }) => {
             loop
             muted
             playsInline
+            poster="/video-poster.jpg" // Add a fallback poster image
           />
 
           {/* Permanent Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
         </a>
 
         {/* Always Visible Metrics */}
-        <div className="absolute bottom-0 left-0 right-0 p-3 space-y-2">
+        <div className="absolute bottom-0 left-0 right-0 p-3 space-y-2 z-20">
           <div className="flex justify-between items-center">
             <div className="flex gap-3">
               <div className="flex items-center gap-1">
@@ -158,6 +179,13 @@ const VideoCard = ({ video }) => {
 };
 
 const VideoShowcase = () => {
+  const controls = useAnimation();
+
+  // Start animation on component mount
+  useEffect(() => {
+    controls.start("animate");
+  }, [controls]);
+
   const videos = [
     {
       id: 1,
@@ -245,7 +273,7 @@ const VideoShowcase = () => {
       url: "https://vm.tiktok.com/ZMkT2jU1V/",
       videoUrl: "/tik1.mp4",
       campaign: "Food brand",
-      date: "Sept 2023",
+      date: "Feb 2024",
       category: "Food",
       metrics: {
         likes: "609",
@@ -255,21 +283,38 @@ const VideoShowcase = () => {
       impact: "50% engagement in 48hours",
       results: ["100% traffic", "7.3k followers", "99% positive"],
     },
+    {
+      id: 7,
+      platform: "tiktok",
+      url: "https://vm.tiktok.com/ZMkTvAk7N/",
+      videoUrl: "/tik4.mp4",
+      campaign: "Personal",
+      date: "Dec 2024",
+      category: "Food",
+      metrics: {
+        likes: "9k",
+        comments: "210",
+        shares: "181",
+      },
+      impact: "5000% engagement in 48hours",
+      results: ["10000% traffic", "601 followers", "100%% positive"],
+    },
   ];
 
   return (
-    <motion.section
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true, amount: 0.3 }}
-      className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-rose-900 py-20 px-4 sm:px-6"
-    >
-      <div className="absolute inset-0 opacity-10">
+    <section className="relative min-h-screen bg-gradient-to-b from-black via-purple-900 to-rose-900 py-20 px-4 sm:px-6 z-10">
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-zinc-950 [background-size:20px_20px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto">
-        <motion.div variants={fadeIn} className="text-center mb-16">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <motion.div
+          initial="initial"
+          id="portfolio"
+          animate={controls}
+          variants={fadeIn}
+          className="text-center mb-16"
+        >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-purple-200">
             Campaign Showcase
           </h2>
@@ -278,13 +323,18 @@ const VideoShowcase = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <motion.div
+          initial="initial"
+          animate={controls}
+          variants={fadeIn}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        >
           {videos.map((video) => (
             <VideoCard key={video.id} video={video} />
           ))}
-        </div>
+        </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

@@ -40,7 +40,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
     },
   };
 
-  const menuItems = ["About", "Services", "Portfolio", "Contact"];
+  const menuItems = ["About", "Projects", "Portfolio", "Contact"];
 
   return (
     <AnimatePresence>
@@ -240,12 +240,16 @@ const HeroSection = () => {
           variants={fadeIn}
           className="flex flex-wrap justify-center gap-4"
         >
-          <button className="px-8 py-3 bg-rose-500 hover:bg-rose-600 rounded-full font-medium transition-colors duration-300">
-            View Portfolio
-          </button>
-          <button className="px-8 py-3 bg-transparent border-2 border-rose-300 hover:bg-rose-500/10 rounded-full font-medium transition-colors duration-300">
-            Get in Touch
-          </button>
+          <Link href="/#portfolio">
+            <button className="px-8 py-3 bg-rose-500 hover:bg-rose-600 rounded-full font-medium transition-colors duration-300">
+              View Portfolio
+            </button>
+          </Link>
+          <Link href="/#contact">
+            <button className="px-8 py-3 bg-transparent border-2 border-rose-300 hover:bg-rose-500/10 rounded-full font-medium transition-colors duration-300">
+              Get in Touch
+            </button>
+          </Link>
         </motion.div>
       </motion.div>
 
@@ -300,7 +304,7 @@ const HeroSection = () => {
         className="fixed top-6 right-6 z-40"
       >
         <nav className="hidden md:flex items-center space-x-4">
-          {["About", "Services", "Portfolio", "Contact"].map((item) => (
+          {["About", "Projects", "Portfolio", "Contact"].map((item) => (
             <motion.a
               key={item}
               whileHover={{ scale: 1.05 }}

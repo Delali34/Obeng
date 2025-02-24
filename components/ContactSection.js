@@ -12,7 +12,7 @@ const fadeIn = {
 const ContactSection = () => {
   return (
     <motion.section
-      id="contacts"
+      id="contact"
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, amount: 0.3 }}
@@ -139,7 +139,7 @@ const ContactSection = () => {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://vm.tiktok.com/ZMkTvAk7N/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
