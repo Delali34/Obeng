@@ -6,6 +6,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -13,10 +14,30 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Ernest Delali",
+  title: "Afia Tiwaa Obeng",
   description:
-    "I am a passionate creative designer with a keen eye for design, aesthetics, and storytelling. My work is driven by the need to create visually stunning and impactful experiences.",
-  Image: "/public/imaged.jpeg",
+    "Transforming brands into digital success stories through strategic social media management and creative storytelling",
+  openGraph: {
+    title: "Afia Tiwaa Obeng",
+    description:
+      "Transforming brands into digital success stories through strategic social media management and creative storytelling",
+    images: [
+      {
+        url: "/obeng.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Afia Tiwaa Obeng",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Afia Tiwaa Obeng",
+    description:
+      "Transforming brands into digital success stories through strategic social media management and creative storytelling",
+    images: ["/obeng.jpeg"],
+    creator: "@yourusername",
+  },
 };
 
 export default function RootLayout({ children }) {
