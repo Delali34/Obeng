@@ -168,7 +168,7 @@ const HeroSection = () => {
       {backgroundImages.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out ${
+          className={`absolute inset-0 w-full h-screen transition-all duration-1000 ease-in-out ${
             index === currentImageIndex
               ? "opacity-100 scale-110"
               : "opacity-0 scale-100"
