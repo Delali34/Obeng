@@ -209,7 +209,7 @@ const VideoShowcase = () => {
       url: "https://www.instagram.com/share/reel/BAFBCjW38p",
       videoUrl: "/insta (2).mp4",
       campaign: "Food brand",
-      date: "Sept 2023",
+      date: "April 2024",
       category: "Food",
       metrics: {
         likes: "52",
