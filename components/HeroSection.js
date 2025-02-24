@@ -186,7 +186,7 @@ const HeroSection = () => {
           />
           {/* Gradient Overlays */}
           <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-rose-900/40 z-10" />
-          <div className="absolute inset-0 bg-black/60 z-20" />
+          <div className="absolute inset-0 h-full bg-black/60 z-20" />
         </div>
       ))}
 

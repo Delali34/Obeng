@@ -24,7 +24,7 @@ const ProjectShowcase = () => {
   const projects = [
     {
       id: 1,
-      title: "Brand Transformation - Fashion House",
+      title: "Daniel's Quaterly Report",
       description:
         "Complete social media strategy and content creation for a leading fashion brand, resulting in 200% engagement increase.",
       tags: ["Social Media", "Content Strategy", "Brand Development"],
@@ -51,9 +51,9 @@ const ProjectShowcase = () => {
     },
     {
       id: 2,
-      title: "Digital Presence Overhaul - Restaurant Chain",
+      title: "Goal setting testimonials",
       description:
-        "Comprehensive social media management and content strategy for a restaurant chain's digital transformation.",
+        "Some of the feedbacks from a webinar where I spoke on goal setting",
       tags: [
         "Social Media Management",
         "Content Creation",
