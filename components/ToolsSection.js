@@ -39,7 +39,7 @@ const ToolsSection = () => {
     ],
     "Social Media Management": [
       {
-        name: "Hey Orca",
+        name: "HeyOrca",
         proficiency: 95,
         description: "Social media scheduling",
         icon: "📊",
