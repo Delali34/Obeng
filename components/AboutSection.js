@@ -57,8 +57,9 @@ const AboutSection = () => {
             variants={fadeIn}
             className="text-lg sm:text-xl text-zinc-200 max-w-2xl mx-auto"
           >
-            As a Social Media Strategist, I transform brands into compelling
-            digital narratives
+            A Digital Creator, Podcast Enthusiast, and Communications Strategist
+            with 4+ years of experience in developing impactful strategies that
+            foster engaged and thriving communities.
           </motion.p>
         </motion.div>
 

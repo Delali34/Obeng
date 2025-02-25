@@ -258,7 +258,7 @@ const VideoShowcase = () => {
       videoUrl: "/tik.mp4",
       campaign: "Food brand",
       date: "Feb 2024",
-      category: "Health",
+      category: "Food",
       metrics: {
         likes: "1.4k",
         comments: "28",
