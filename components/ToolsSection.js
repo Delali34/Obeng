@@ -21,7 +21,7 @@ const ToolsSection = () => {
 
       {
         name: "Canva",
-        proficiency: 70,
+        proficiency: 85,
         description: "Quick social media graphics",
         icon: "🎨",
       },
