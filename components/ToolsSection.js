@@ -14,33 +14,22 @@ const ToolsSection = () => {
     "Content Creation": [
       {
         name: "Capcut",
-        proficiency: 90,
+        proficiency: 100,
         description: "Video editing & post-production",
         icon: "🎬",
       },
-      // {
-      //   name: "Adobe After Effects",
-      //   proficiency: 85,
-      //   description: "Motion graphics & visual effects",
-      //   icon: "✨",
-      // },
+
       {
         name: "Canva",
-        proficiency: 95,
+        proficiency: 70,
         description: "Quick social media graphics",
         icon: "🎨",
       },
-      // {
-      //   name: "Adobe Photoshop",
-      //   proficiency: 88,
-      //   description: "Image editing & manipulation",
-      //   icon: "🖼️",
-      // },
     ],
     "Social Media Management": [
       {
         name: "HeyOrca",
-        proficiency: 95,
+        proficiency: 90,
         description: "Social media scheduling",
         icon: "📊",
       },
@@ -70,12 +59,7 @@ const ToolsSection = () => {
         description: "Ad campaign optimization",
         icon: "🎯",
       },
-      // {
-      //   name: "Sprout Social",
-      //   proficiency: 85,
-      //   description: "Social listening & reporting",
-      //   icon: "👥",
-      // },
+
       {
         name: "Mailchimp",
         proficiency: 88,

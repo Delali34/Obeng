@@ -107,7 +107,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             {/* Social Links */}
             <div className="absolute bottom-8 left-6 right-6">
               <div className="flex justify-around">
-                {["Instagram", "Twitter", "LinkedIn"].map((social) => (
+                {["Instagram", "TikTok", "LinkedIn"].map((social) => (
                   <a
                     key={social}
                     href="#"
@@ -154,7 +154,7 @@ const HeroSection = () => {
       url: "https://www.instagram.com/afiaobeng__?igsh=Y2l3MDlxdWV3ZDZl",
     },
     {
-      name: "Tiktok",
+      name: "TikTok",
       url: "https://www.tiktok.com/@afiaobeng__?_t=ZM-8uBpuxtbV4f&_r=1",
     },
     {
