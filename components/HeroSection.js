@@ -149,8 +149,14 @@ const HeroSection = () => {
   }, []);
 
   const socialLinks = [
-    { name: "Instagram", url: "https://instagram.com" },
-    { name: "Twitter", url: "https://twitter.com" },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/afiaobeng__?igsh=Y2l3MDlxdWV3ZDZl",
+    },
+    {
+      name: "Tiktok",
+      url: "https://www.tiktok.com/@afiaobeng__?_t=ZM-8uBpuxtbV4f&_r=1",
+    },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/afia-obeng-614684181",
